@@ -41,8 +41,7 @@ void setup()
 
  Serial.begin(9600);
  pinMode(button, INPUT);
- lcd.init();                      // initialize the lcd 
- // Print a message to the LCD.
+ lcd.init();                   
  lcd.print('>');
  lcd.backlight();
  lcd.noCursor();
@@ -58,9 +57,7 @@ void loop()
     alreadyClicked = false;
   }
   delay(400);
-
  
-
   //move balls
   for(int i = 0; i < ballsLengthA; ++i){
     moveBall(i, 0);
@@ -164,15 +161,8 @@ void movePlayer(){
   alreadyClicked = true;
 }
 
-//LED
-
-
-
-
-
 ///LED  display
 void showNum(const short num){
-
   //clear
   digitalWrite(a,LOW);
   digitalWrite(b,LOW);
