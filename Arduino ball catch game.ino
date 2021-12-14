@@ -171,7 +171,7 @@ void showNum(const short num){
   digitalWrite(d,LOW);  
   digitalWrite(e,LOW);  
   digitalWrite(f,LOW);  
-
+  delayMicroseconds(10);
 
   switch(num){
       case 0:
